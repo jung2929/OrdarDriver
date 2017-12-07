@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/product_img"
+        android:text="[해발500포크] 냉장삼겹살 수육용"
+        android:textColor="@color/color_gray"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/title_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/product_img"
+        android:text="수량"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/title_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_no"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/product_img"
+        android:text="상품코드"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/product_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/product_img"
+        android:text="10"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/product_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_no"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/product_img"
+        android:text="13442-4234-234"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/mag"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="7dp"
+        android:layout_toLeftOf="@+id/kakao_navi"
+        android:background="@drawable/btn_call" />
+
+    <ImageView
+        android:id="@+id/kakao_navi"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_kakao"
+        android:onClick="onclick" />
+
+
+</RelativeLayout>

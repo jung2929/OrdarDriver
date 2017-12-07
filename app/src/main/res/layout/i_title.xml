@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:background="@color/color_soft_gray"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12.13.23"
+        android:layout_marginLeft="16dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_gray"
+        android:id="@+id/odar_date"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:textColor="@color/color_gray"
+        android:textSize="12sp"
+        android:text="그룹번호 123-22-5445-35-2-3"
+        android:id="@+id/odar_no"
+        android:layout_gravity="center" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/select_all"
+        android:layout_width="match_parent"
+        android:layout_height="41dp">
+
+        <CheckBox
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:checked="true"
+            android:button="@null"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/checkbox" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/title_adr"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/title_adr"
+            android:text="전체선택"
+            android:textColor="@color/color_gray"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_all"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/color_white" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_main"
+        android:gravity="center"
+        android:text="배송완료"
+        android:onClick="onClick"
+        android:id="@+id/next"
+        android:textColor="@color/color_white"
+        android:textSize="14dp" />
+</RelativeLayout>

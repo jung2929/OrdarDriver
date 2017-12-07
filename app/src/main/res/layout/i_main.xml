@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="124dp"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@color/color_soft_gray"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="2017.12.30"
+            android:textColor="@color/color_gray"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/group_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="1212-1212-112"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/color_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/title_adr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="대표주소"
+            android:textColor="@color/color_gray"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_adr"
+            android:layout_marginTop="6dp"
+            android:text="수령시간"
+            android:textColor="@color/color_gray"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/adr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="서울시 강남구 테헤란로 311"
+            android:layout_toRightOf="@+id/title_adr"
+            android:layout_alignBaseline="@id/title_adr"
+            android:textColor="@color/color_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/title_time"
+            android:layout_marginLeft="12dp"
+            android:text="17.12.23 13:00"
+            android:layout_toRightOf="@+id/title_time"
+            android:textColor="@color/color_gray"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:id="@+id/group_num"
+            android:text="총 10개"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_light_gray"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/mag"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/kakao_navi"
+            android:background="@drawable/btn_msg" />
+
+        <ImageView
+            android:id="@+id/kakao_navi"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_kakao"
+            android:onClick="onclick" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

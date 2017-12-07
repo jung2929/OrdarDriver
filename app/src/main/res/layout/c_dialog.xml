@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/color_white">
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="안내문자보내기"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:textColor="@color/color_main"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/dialog_contents"
+            android:layout_width="238dp"
+            android:layout_height="133dp"
+            android:layout_below="@+id/dialog_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/box_soft_gray"
+            android:gravity="center"
+            android:lineSpacingExtra="10dp"
+            android:padding="20dp"
+            android:textColor="@color/color_light_gray"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/dialog_contents"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_soft_gray"
+                android:gravity="center"
+                android:text="취소"
+                android:id="@+id/exit"
+                android:textSize="14sp"
+                android:textColor="@color/color_white" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/color_white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/color_soft_gray"
+                android:gravity="center"
+                android:id="@+id/submit"
+                android:text="전송"
+                android:textSize="14sp"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>
